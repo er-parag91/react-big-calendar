@@ -90,7 +90,7 @@ export function sortEvents(evtA, evtB, accessors) {
     dates.ceil(accessors.end(evtB), 'day'),
     'day'
   )
-
+  console.log(evtA, evtB, accessors);
   return (
     startSort || // sort by start Day first
     Math.max(durB, 1) - Math.max(durA, 1) || // events spanning multiple days go first
